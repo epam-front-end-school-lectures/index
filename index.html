@@ -35,13 +35,20 @@
 		}
 
 		a {
-			transition: color linear .2s;
+			transition: linear .2s;
+			transition-property: color, border-color;
+			border-bottom:: 1px dashed transparent;
 			font-size: 1em;
 			color: inherit;
 			text-decoration: none;
 		}
+		
+		.deprecated {
+			color: #bbb;
+		}
 
 		a:not([href=""]):hover {
+			border-bottom-color: #39d3c7;
 			color: #39c2d7;
 		}
 	</style>
@@ -52,14 +59,15 @@
 	<li><a href="//epam-front-end-school-lectures.github.io/environment/" target="_blank">Environment</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/frontend-overview" target="_blank">Frontend Overview</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/layouts/" target="_blank">Layouts</a></li>
-	<li><a href="//epam-front-end-school-lectures.github.io/html5-vs-html4/" target="_blank">HTML5 vs HTML4</a></li>
+	<li><a href="//epam-front-end-school-lectures.github.io/html5/" target="_blank">HTML5</a></li>
+	<li><a href="//epam-front-end-school-lectures.github.io/html5-vs-html4/" target="_blank" class="deprecated">HTML5 vs HTML4</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/CSS-Preprocessors/" target="_blank">CSS Preprocessors</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/methodologies/" target="_blank">Methodologies</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/cross-browser-css/" target="_blank">Cross Browser CSS</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io//advanced-css/" target="_blank">Advanced CSS</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/responsive-web-design/" target="_blank">Responsive Web Design</a></li>
 	<li><a href="//epam-front-end-school-lectures.github.io/email-templates/" target="_blank">E-mail Templates</a></li>
-	<li><a href="" target="_blank">Frontend Performance</a></li>
+	<!--<li><a href="" target="_blank">Frontend Performance</a></li>-->
 	<li><a href="//epam-front-end-school-lectures.github.io/decencies/" target="_blank">Decencies</a></li>
 </ul>
 </body>
